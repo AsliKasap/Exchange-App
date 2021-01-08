@@ -36,9 +36,6 @@ function createCurrencyElements(elements, root, inputName){
      // amountu alalim
      const amount     = document.querySelector("input[name='amount']").value;
      
-     const fromTarget1 = document.querySelector("input[name='currency_from']:checked");
-     // kime ceviriyoruz
-     const toTarget1   = document.querySelector("input[name='currency_to']:checked");
 
 getBaseData(fromTarget,toTarget,amount).then((rates)=>{
  
@@ -47,7 +44,7 @@ getBaseData(fromTarget,toTarget,amount).then((rates)=>{
     //const resultForOne = currentCurrencyObject[toTarget];
     const result = amount * resultForOne;
     const currencyResult = document.querySelector("#currency-result");
-   currencyResult.innerHTML = amount + " " + fromTarget + " = " + result + " " + toTarget;
+   currencyResult.innerHTML = amount + " " + fromTarget + " = " + result.toFixed(3) + " " + toTarget;
    if(fromTarget==toTarget){
     currencyResult.innerHTML = "Farklı bir seçim yapınız";
    }
