@@ -1,6 +1,5 @@
 # Exchange-App
-- [API](https://exchangeratesapi.io/)dan alınan tüm kurlara dönüşüm sağlanır.
-- [İncelemek için tıklayın](https://aslikasap.github.io/Simple-Exchange-App/)
-
+- Let's choose what we want to exchange,retrieve a live data from exchange [API](https://exchangeratesapi.io/) and calculate..
+- [Click here](https://aslikasap.github.io/Simple-Exchange-App/)
 
 ![ExchangeApp](./exchangeApp.png)
